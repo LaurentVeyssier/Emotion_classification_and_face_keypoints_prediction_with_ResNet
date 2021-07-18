@@ -5,7 +5,8 @@ This project comes from [UDEMY's course on modern AI applications](https://www.u
 The objective is to use a ResNet architecture to built two deep learning models from scratch:
 - one model will predict keypoints on images of human faces
 - one model will predict the emotion from the image out of 5 classes {0:'anger', 1:'disgust', 2:'sad', 3:'happiness', 4: 'surprise'}
-Through the combination of both models, the project generates detailed emotion predictions for new unseen images.
+
+Combining both models, the project generates detailed emotion predictions for new unseen images.
 
 # Dataset
 
