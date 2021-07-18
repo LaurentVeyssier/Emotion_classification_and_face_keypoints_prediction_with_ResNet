@@ -58,3 +58,7 @@ In this last step, we combine the two models in a pipeline taking images as inpu
 
 ![](assets/prediction.jpg)
 
+Performance achieved is fairly good. Below an exemple of wrong keypoint predictions which may be explained by the unusual face with closed eyes. The model is unable to find the contrasted pattern of the eyes likely to be critical to place keypoints.
+Emotion detection performance is also fairly good with the exception of classe 1 (disgust) due to its poor representation in the dataset. THe model had too little samples compared to the other classes to properly identify the specific features allowing to deifferentiate between other classes.
+
+![](assets/confusion_matrix.jpg)
