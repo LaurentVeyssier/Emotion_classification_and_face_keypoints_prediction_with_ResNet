@@ -27,12 +27,12 @@ as well as data normalization (pixel values between 0 and 1). We end up with 3 x
 
 Facial keypoint detection model:
 - RESNET principles
-![](resnet.PNG)
+![](assets/resnet.png)
 
 - The model use two Res-blocks able to resolve vanishing gradient issues in deep models with identity blocks passing along the input signal down to deeper layers. The signal is progressively downsampled through Average Pooling layers. In last section of the model, a dense neural network generates 30 coordinates corresponding to the x's and y's of the 15 keypoints. This is achieved with a final layer of output dimension 30 and ReLu activation.
 
 The model contains over 18 millions parameters to train.
-![](resblocks.PNG)
-![](idblock.PNG)
+![](assets/resblocks.png)
+![](assets/idblock.png)
 
 
