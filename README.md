@@ -26,6 +26,7 @@ We proceed with data augmentation in order to increase the number of training sa
 as well as data normalization (pixel values between 0 and 1). We end up with 3 x times more samples.
 
 Facial keypoint detection model:
+
 - RESNET principles
 ![](assets/resnet.PNG)
 
@@ -35,4 +36,8 @@ The model contains over 18 millions parameters to train.
 ![](assets/resblocks.PNG)
 ![](assets/idblock.PNG)
 
+
+# Part 2: Facial expression detection
+
+In this part, a deep learning model with convolution neural network and resnet architecture analyzes images and predicts emotion fromfacial expression dection in grayscale 96x96 images.
 
