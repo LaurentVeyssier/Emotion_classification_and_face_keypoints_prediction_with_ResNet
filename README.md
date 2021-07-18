@@ -41,3 +41,5 @@ The model contains over 18 millions parameters to train.
 
 In this part, a deep learning model with convolution neural network and resnet architecture analyzes images and predicts emotion fromfacial expression dection in grayscale 96x96 images.
 
+![](assets/emotion.jpg)
+
