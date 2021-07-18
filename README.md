@@ -43,3 +43,18 @@ In this part, a deep learning model with convolution neural network and resnet a
 
 ![](assets/emotion.jpg)
 
+The dataset used for training of the model contains 24,568 images with associated facial emotion.
+The classe 1 ('disgust') is well under-represented adn will be penalized during training. To overcome this issues, we could perform data augmentation to equalize the distribution (not done in this project). Instead, we proceed with data augmentation using ImageDataGenerator in order to increase the number of samples as we perform training.
+This will allow to illustrate the issue from imbalanced dataset.
+
+the RESNET model uses two res_block and a final dense layer of dimension 5 with softmax activation to generate the prediction over the 5 possible classes. The predicted classe is selected by looking for the highest probability within the softmax distribution.
+
+Training is performed using adam optimizer and categorical_crossentropy loss metric (multi-class problem).
+Unlike the first model, a large number of epochs (> 200) should be considered to achieve acceptable performance.
+
+# Part 3: Combine models
+
+In this last step, we combine the two models in a pipeline taking images as input and predicting the facial keypoints and facial emotion.
+
+![](assets/prediction.jpg)
+
